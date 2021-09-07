@@ -1,0 +1,437 @@
+models:
+  User:
+    uuid: string:100 unique
+    dni: integer unique
+    nombre: string
+    apellido: string
+    sexo: mediumInteger
+    fchanacimiento: date
+    email: string unique
+    direccion: string
+    telefcelular: string:50
+    teleffijo: string:50
+    usuario: string unique
+    password: string
+    passwordunico: string
+    tipousuario: mediumInteger
+    foto: string
+    estado: mediumInteger
+    email_verified_at: timestamp nullable
+    remember_token: rememberToken
+    relationships:
+      hasMany: UsuProyecto, UsuPermiso
+  Departamento:
+    nombre: string
+    estado: mediumInteger
+  Provincia:
+    nombre: string
+    departamento_id: id
+  Distrito:
+    nombre: string
+    provincia_id: id
+  Proveedor:
+    uuid: string:100 unique
+    ruc: string
+    razonsocial: string
+    direccion: string nullable
+    estadoactual: string nullable
+    emision: string nullable
+    ple: string nullable
+    telefonocelular: integer nullable
+    telefonofijo: integer nullable
+    nombrecontacto: string nullable
+    correo: string:100 nullable
+    cuentabancaria: integer nullable
+    observacion: text nullable
+    user_id: id
+    estado: mediumInteger
+  Proyecto:
+    uuid: string:100 unique
+    nombre: string
+    departamento_id: id
+    provincia_id: id
+    distrito_id: id
+    proveedor_id: id
+    fchainicial: date nullable
+    fchafinal: date nullable
+    observacion: text nullable
+    alm_sigla: string
+    alm_serie: string
+    com_sigla: string
+    com_serie: string
+    caj_sigla: string
+    caj_serie: string
+    estado: mediumInteger
+  Modulo:
+    uuid: string:100 unique
+    codigom: integer unique
+    nombre: string:20
+    slug: string unique
+    icon: string:20 nullable
+    fchaactivacion: date nullable
+    estado: mediumInteger
+    relationships:
+      hasMany: submodulo, UsuModulo
+  Submodulo:
+    uuid: string:100 unique
+    codigom: integer unique
+    modulo_id: id
+    nombre: string
+    slug: string unique
+    fchaactivacion: date nullable
+    estado: mediumInteger
+    relationships:
+      hasMany: UsuModulo, UsuSubmodulo
+  UsuProyecto:
+    uuid: string:100 unique
+    fchaactivacion: date nullable
+    estado: boolean
+    user_id: id
+    proyecto_id: id
+    relationships:
+      hasMany: UsuModulo
+  UsuModulo:
+    uuid: string:100 unique
+    fchaactivacion: date nullable
+    estado: boolean
+    usu_proyecto_id: id
+    modulo_id: id
+    relationships:
+      hasMany: UsuSubmodulo
+  UsuSubmodulo:
+    uuid: string:100 unique
+    tipopermiso: mediumInteger
+    fchaactivacion: date nullable
+    estado: boolean
+    usu_modulo_id: id
+    submodulo_id: id
+  TipoPermiso:
+    uuid: string:100 unique
+    nombre: string
+    simbolo: string
+  UsuPermiso:
+    uuid: string:100 unique
+    usuer_id: id
+    proyecto_id: id
+    modulo_id: id
+    submodulo_id: id
+    tipo_permiso_id: id
+  #CREAR TABLAS INDEPENDIENTES
+  Pais:
+    nombre: string
+    idioma: string
+    moneda: string
+    simbolo: string
+    estado: boolean
+  GradoInstruccion:
+    nombre: string:100
+    estado: boolean
+  Profesion:
+    nombre: string:100
+    estado: boolean
+  Banco:
+    uuid: string:100 unique
+    nombre: string:100
+    estado: boolean
+  SistemaPension:
+    nombre: string:100
+    sector: string:100
+    estado: boolean
+  Uniforme:
+    nombre: string:100
+    estado: boolean
+  Calzado:
+    nombre: string:100
+    estado: boolean
+  TipoContrato:
+    nombre: string:100
+    estado: boolean
+  Area:
+    uuid: string:100 unique
+    nombre: string:100
+    estado: boolean
+  Cargo:
+    uuid: string:100 unique
+    nombre: string:100
+    estado: boolean
+  Civil:
+    uuid: string:100 unique
+    nombre: string:100
+    estado: boolean
+  Parentesco:
+    nombre: string
+  TipoMovimiento:
+    uuid: string:100 unique
+    codigo: string
+    descripcion: string
+    tipo: mediumInteger
+    estado: boolean
+  TipoAutorizacion:
+    uuid: string:100 unique
+    nombre: string
+    estado: boolean
+  TipoComprobante:
+    uuid: string:100 unique
+    codigo: string
+    nombre: string
+    estado: boolean
+  TipoMaquina:
+    uuid: string:100 unique
+    nombre: string
+    estado: boolean
+  TipoCambio:
+    uuid: string:100 unique
+    month_year: string
+    purchase: decimal:8,2
+    sale: decimal:8,2
+    date: string:10
+    day: string:10
+    user_id: id
+  Sanguineo:
+    nombre: string
+    estado: boolean
+  UnidadMedida:
+    uuid: string:100 unique
+    nombre: string
+    simbolo: string
+    estado: boolean
+  #CREAR TABLAS DEPENDIENTES
+  Empleado:
+    uuid: string:100 unique
+    dni: string:100
+    codmanual: string
+    nombre: string
+    apellido: string
+    sexo: string
+    pais_id: id
+    departamento_id: id
+    provincia_id: id
+    distrito_id: id
+    fnacimiento: string
+    estadocivil: string
+    correo: string
+    grado_instruccion_id: id
+    profesion_id: id
+    banco_id: id
+    cuentabancaria: string
+    sistema_pension_id: id
+    cuss: string
+    esalud: string
+    nombre_jr: string
+    nro_mz: string
+    int_lte: string
+    urb_asoc: string
+    referencia: string
+    tlefcasa: string
+    tlefmovil: string
+    tleffamiliar: string
+    tlefotro: string
+    uniforme_id: id
+    calzado_id: id
+    numerolicencia: string
+    user_id: id
+    foto: string
+  EmpleadoDetalle:
+    uuid: string:100 unique
+    empleado_id: id
+    proyecto_id: id
+    tipo_contrato_id: id
+    fchaingreso: string
+    fchatermino: string
+    fchacese: string
+    area_id: id
+    cargo_id: id
+    motivocese: string
+    estado: boolean
+  EmpleadoConyugue:
+    uuid: string:100 unique
+    nombre: string
+    dni: string
+    pais_id: id
+    departamento_id: id
+    provincia_id: id
+    distrito_id: id
+    fchanacimiento: string
+    civil_id: id
+    partida: string
+    grado_instruccion_id: id
+    profesion_id: id
+    actividad: string
+    empleado_id: id
+  EmpleadoEconomia:
+    uuid: string:100 unique
+    ingreso_adi: boolean
+    actividad_adi: string
+    monto_adi: decimal:8,2
+    ingreso_cony: boolean
+    actividad_cony: string
+    monto_cony: decimal:8,2
+    ingreso_ali: decimal:8,2
+    ingreso_edu: decimal:8,2
+    ingreso_sal: decimal:8,2
+    ingreso_viv: decimal:8,2
+    ingreso_ser: decimal:8,2
+    ingreso_hig: decimal:8,2
+    ingreso_lim: decimal:8,2
+    ingreso_tra: decimal:8,2
+    ingreso_total: decimal:8,2
+    empleado_id: id
+  EmpleadoExperiencia:
+    uuid: string:100 unique
+    empresa: string
+    funcion: string
+    fchainicio: string
+    fchafinal: string
+    empleado_id: id
+  EmpleadoFamilia:
+    uuid: string:100 unique
+    nombre: string
+    parentesco_id: id
+    dni: string
+    fchanacimiento: string:10
+    empleado_id: id
+  EmpleadoFormacion:
+    uuid: string:100 unique
+    especialdiad: string
+    centro_estudio: string
+    fchainicio: string
+    fchafinal: string
+    empleado_id: id
+  EmpleadoPadres:
+    uuid: string:100 unique
+    nombre: string
+    sexo: string
+    dni: string
+    pais: string
+    departamento_id: id
+    provincia_id: id
+    distrito_id: id
+    fecha_nacimiento: date nullable
+    civil_id: id
+    correo: string
+    grado_instruccion_id: id
+    profesion_id: id
+    actividad: string
+    empleado_id: id
+  EmpleadoSalud:
+    uuid: string:100 unique
+    sanguineo_id: id
+    enfermedad_t: string
+    enfermedad_f: string
+    empleado_id: id
+  EmpleadoSituacion:
+    uuid: string:100 unique
+    casa: string
+    material: string
+    tipo: string
+    agua: string
+    desague: string
+    luz: string
+    telefono: string
+    internet: string
+    cable: string
+    comunicacion: string
+    social: string
+    empleado_id: id
+  #ARTICULO
+  Articulo:
+    uuid: string:100 unique
+    codigo: string
+    nombre: string
+    img: string
+    codigoactivo: string
+    unidad_medida_id: id
+    nroparte: string
+    stockmin: string
+    precio: string
+    fechav: date nullable
+    impigv: string
+    impisc: string
+    ctaprovicional: string
+    ctaisc: string
+    ctaigv: string
+    ctavarios: string
+    estado: boolean
+    user_id: id
+  #ALMACEN
+  Almacen:
+    uuid: string:100 unique
+    codigo: string
+    sigla_ag: string
+    serie_ag: string
+    periodo_ag: string
+    numero_oc: string
+    fecha_oc: date nullable
+    correlativo: string
+    fcha_correlativo: string
+    tipo_oc: string
+    area_solicitante_id: id:Area
+    empleado_solicitante_id: id:Empleado
+    proveedor_id: id
+    guia: string
+    fecha_guia: date nullable
+    factura: string
+    fecha_factura: date nullable
+    tipo_movimiento_id: id
+    area_responsable_id: id:Area
+    empleado_despacho_id: id:Empleado
+    tipo_autorizacion_id: id
+    numero_fisico: string
+    tipo_comprobante_id: id
+    tipo_maquina_id: id
+    igv: string
+    tipo_cambio: id
+    tpopago: string
+    tpomoneda: string
+    observacio: string
+    fecha: date nullable
+    estado: mediumInteger
+    user_id: string
+    proyecto_id: id
+    relationships:
+      hasMany: AlmacenDetalle, Kardex
+  AlmacenDetalle:
+    uuid: string:100 unique
+    almacen_id: id
+    sigla_ad: string
+    fecha: date nullable
+    articulo_id: id
+    item: string
+    cant_ingreso: string
+    cant_salida: string
+    precio_unitario: string
+    sub_total: string
+    igv: string
+    total_soles: string
+    total_dolar: string
+    proyecto_id: id
+  Kardex:
+    uuid: string:100 unique
+    fecha: date nullable
+    almacen_id: id
+    tipo_movimiento: id
+    tipo_cambio: id
+    articulo_id: string
+    numero_parte: string
+    numero_documento: string
+    fecha_documento: date nullable
+    tipo: mediumInteger
+    ingreso: decimal:8,2
+    salida: decimal:8,2
+    saldo: decimal:8,2
+    costo_unitario: decimal:8,2
+    costo_promedio: decimal:8,2
+    costo_ingreso: decimal:8,2
+    costo_salida: decimal:8,2
+    costo_saldo: decimal:8,2
+    numero_orden: string:10
+    saldo_anterior: decimal:8,2
+    costo_anterior: decimal:8,2
+    promedio_anterior: decimal:8,2
+    precio_unitario: decimal:8,2
+    cod_control: string
+    ciclos: string
+    comentario: string
+    proyecto_id: id
+
+seeders: Departamento, Provincia, Distrito, User, Proveedor, Proyecto, Modulo, Submodulo, UsuProyecto, UsuModulo, UsuModulo, UsuSubmodulo, Pais, GradoInstruccion, Profesion, Banco, SistemaPension, Uniforme, Calzado, TipoContrato, Area, Cargo, Civil, Parentesco, TipoMovimiento, TipoAutorizacion, TipoComprobante, TipoMaquina, TipoCambio, Empleado, EmpleadoDetalle, EmpleadoConyugue, EmpleadoEconomia, EmpleadoExperiencia, EmpleadoFamilia, EmpleadoFormacion, EmpleadoPadres, EmpleadoSalud, EmpleadoSituacion, Almacen, AlmacenDetalle, Kardex

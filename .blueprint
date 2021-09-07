@@ -1,0 +1,228 @@
+created:
+    - database/factories/UserFactory.php
+    - database/factories/DepartamentoFactory.php
+    - database/factories/ProvinciaFactory.php
+    - database/factories/DistritoFactory.php
+    - database/factories/ProveedorFactory.php
+    - database/factories/ProyectoFactory.php
+    - database/factories/ModuloFactory.php
+    - database/factories/SubmoduloFactory.php
+    - database/factories/UsuProyectoFactory.php
+    - database/factories/UsuModuloFactory.php
+    - database/factories/UsuSubmoduloFactory.php
+    - database/factories/TipoPermisoFactory.php
+    - database/factories/UsuPermisoFactory.php
+    - database/factories/PaisFactory.php
+    - database/factories/GradoInstruccionFactory.php
+    - database/factories/ProfesionFactory.php
+    - database/factories/BancoFactory.php
+    - database/factories/SistemaPensionFactory.php
+    - database/factories/UniformeFactory.php
+    - database/factories/CalzadoFactory.php
+    - database/factories/TipoContratoFactory.php
+    - database/factories/AreaFactory.php
+    - database/factories/CargoFactory.php
+    - database/factories/CivilFactory.php
+    - database/factories/ParentescoFactory.php
+    - database/factories/TipoMovimientoFactory.php
+    - database/factories/TipoAutorizacionFactory.php
+    - database/factories/TipoComprobanteFactory.php
+    - database/factories/TipoMaquinaFactory.php
+    - database/factories/TipoCambioFactory.php
+    - database/factories/SanguineoFactory.php
+    - database/factories/UnidadMedidaFactory.php
+    - database/factories/EmpleadoFactory.php
+    - database/factories/EmpleadoDetalleFactory.php
+    - database/factories/EmpleadoConyugueFactory.php
+    - database/factories/EmpleadoEconomiaFactory.php
+    - database/factories/EmpleadoExperienciaFactory.php
+    - database/factories/EmpleadoFamiliaFactory.php
+    - database/factories/EmpleadoFormacionFactory.php
+    - database/factories/EmpleadoPadresFactory.php
+    - database/factories/EmpleadoSaludFactory.php
+    - database/factories/EmpleadoSituacionFactory.php
+    - database/factories/ArticuloFactory.php
+    - database/factories/AlmacenFactory.php
+    - database/factories/AlmacenDetalleFactory.php
+    - database/factories/KardexFactory.php
+    - database/migrations/2021_07_20_171256_create_users_table.php
+    - database/migrations/2021_07_20_171257_create_departamentos_table.php
+    - database/migrations/2021_07_20_171258_create_provincias_table.php
+    - database/migrations/2021_07_20_171259_create_distritos_table.php
+    - database/migrations/2021_07_20_171300_create_proveedors_table.php
+    - database/migrations/2021_07_20_171301_create_proyectos_table.php
+    - database/migrations/2021_07_20_171302_create_modulos_table.php
+    - database/migrations/2021_07_20_171303_create_submodulos_table.php
+    - database/migrations/2021_07_20_171304_create_usu_proyectos_table.php
+    - database/migrations/2021_07_20_171305_create_usu_modulos_table.php
+    - database/migrations/2021_07_20_171306_create_usu_submodulos_table.php
+    - database/migrations/2021_07_20_171307_create_tipo_permisos_table.php
+    - database/migrations/2021_07_20_171308_create_usu_permisos_table.php
+    - database/migrations/2021_07_20_171309_create_pais_table.php
+    - database/migrations/2021_07_20_171310_create_grado_instruccions_table.php
+    - database/migrations/2021_07_20_171311_create_profesions_table.php
+    - database/migrations/2021_07_20_171312_create_bancos_table.php
+    - database/migrations/2021_07_20_171313_create_sistema_pensions_table.php
+    - database/migrations/2021_07_20_171314_create_uniformes_table.php
+    - database/migrations/2021_07_20_171315_create_calzados_table.php
+    - database/migrations/2021_07_20_171316_create_tipo_contratos_table.php
+    - database/migrations/2021_07_20_171317_create_areas_table.php
+    - database/migrations/2021_07_20_171318_create_cargos_table.php
+    - database/migrations/2021_07_20_171319_create_civils_table.php
+    - database/migrations/2021_07_20_171320_create_parentescos_table.php
+    - database/migrations/2021_07_20_171321_create_tipo_movimientos_table.php
+    - database/migrations/2021_07_20_171322_create_tipo_autorizacions_table.php
+    - database/migrations/2021_07_20_171323_create_tipo_comprobantes_table.php
+    - database/migrations/2021_07_20_171324_create_tipo_maquinas_table.php
+    - database/migrations/2021_07_20_171325_create_tipo_cambios_table.php
+    - database/migrations/2021_07_20_171326_create_sanguineos_table.php
+    - database/migrations/2021_07_20_171327_create_unidad_medidas_table.php
+    - database/migrations/2021_07_20_171328_create_empleados_table.php
+    - database/migrations/2021_07_20_171329_create_empleado_detalles_table.php
+    - database/migrations/2021_07_20_171330_create_empleado_conyugues_table.php
+    - database/migrations/2021_07_20_171331_create_empleado_economias_table.php
+    - database/migrations/2021_07_20_171332_create_empleado_experiencias_table.php
+    - database/migrations/2021_07_20_171333_create_empleado_familias_table.php
+    - database/migrations/2021_07_20_171334_create_empleado_formacions_table.php
+    - database/migrations/2021_07_20_171335_create_empleado_padres_table.php
+    - database/migrations/2021_07_20_171336_create_empleado_saluds_table.php
+    - database/migrations/2021_07_20_171337_create_empleado_situacions_table.php
+    - database/migrations/2021_07_20_171338_create_articulos_table.php
+    - database/migrations/2021_07_20_171339_create_almacens_table.php
+    - database/migrations/2021_07_20_171340_create_almacen_detalles_table.php
+    - database/migrations/2021_07_20_171341_create_kardexes_table.php
+    - app/Models/User.php
+    - app/Models/Departamento.php
+    - app/Models/Provincia.php
+    - app/Models/Distrito.php
+    - app/Models/Proveedor.php
+    - app/Models/Proyecto.php
+    - app/Models/Modulo.php
+    - app/Models/Submodulo.php
+    - app/Models/UsuProyecto.php
+    - app/Models/UsuModulo.php
+    - app/Models/UsuSubmodulo.php
+    - app/Models/TipoPermiso.php
+    - app/Models/UsuPermiso.php
+    - app/Models/Pais.php
+    - app/Models/GradoInstruccion.php
+    - app/Models/Profesion.php
+    - app/Models/Banco.php
+    - app/Models/SistemaPension.php
+    - app/Models/Uniforme.php
+    - app/Models/Calzado.php
+    - app/Models/TipoContrato.php
+    - app/Models/Area.php
+    - app/Models/Cargo.php
+    - app/Models/Civil.php
+    - app/Models/Parentesco.php
+    - app/Models/TipoMovimiento.php
+    - app/Models/TipoAutorizacion.php
+    - app/Models/TipoComprobante.php
+    - app/Models/TipoMaquina.php
+    - app/Models/TipoCambio.php
+    - app/Models/Sanguineo.php
+    - app/Models/UnidadMedida.php
+    - app/Models/Empleado.php
+    - app/Models/EmpleadoDetalle.php
+    - app/Models/EmpleadoConyugue.php
+    - app/Models/EmpleadoEconomia.php
+    - app/Models/EmpleadoExperiencia.php
+    - app/Models/EmpleadoFamilia.php
+    - app/Models/EmpleadoFormacion.php
+    - app/Models/EmpleadoPadres.php
+    - app/Models/EmpleadoSalud.php
+    - app/Models/EmpleadoSituacion.php
+    - app/Models/Articulo.php
+    - app/Models/Almacen.php
+    - app/Models/AlmacenDetalle.php
+    - app/Models/Kardex.php
+    - database/seeders/DepartamentoSeeder.php
+    - database/seeders/ProvinciaSeeder.php
+    - database/seeders/DistritoSeeder.php
+    - database/seeders/UserSeeder.php
+    - database/seeders/ProveedorSeeder.php
+    - database/seeders/ProyectoSeeder.php
+    - database/seeders/ModuloSeeder.php
+    - database/seeders/SubmoduloSeeder.php
+    - database/seeders/UsuProyectoSeeder.php
+    - database/seeders/UsuModuloSeeder.php
+    - database/seeders/UsuModuloSeeder.php
+    - database/seeders/UsuSubmoduloSeeder.php
+    - database/seeders/PaisSeeder.php
+    - database/seeders/GradoInstruccionSeeder.php
+    - database/seeders/ProfesionSeeder.php
+    - database/seeders/BancoSeeder.php
+    - database/seeders/SistemaPensionSeeder.php
+    - database/seeders/UniformeSeeder.php
+    - database/seeders/CalzadoSeeder.php
+    - database/seeders/TipoContratoSeeder.php
+    - database/seeders/AreaSeeder.php
+    - database/seeders/CargoSeeder.php
+    - database/seeders/CivilSeeder.php
+    - database/seeders/ParentescoSeeder.php
+    - database/seeders/TipoMovimientoSeeder.php
+    - database/seeders/TipoAutorizacionSeeder.php
+    - database/seeders/TipoComprobanteSeeder.php
+    - database/seeders/TipoMaquinaSeeder.php
+    - database/seeders/TipoCambioSeeder.php
+    - database/seeders/EmpleadoSeeder.php
+    - database/seeders/EmpleadoDetalleSeeder.php
+    - database/seeders/EmpleadoConyugueSeeder.php
+    - database/seeders/EmpleadoEconomiaSeeder.php
+    - database/seeders/EmpleadoExperienciaSeeder.php
+    - database/seeders/EmpleadoFamiliaSeeder.php
+    - database/seeders/EmpleadoFormacionSeeder.php
+    - database/seeders/EmpleadoPadresSeeder.php
+    - database/seeders/EmpleadoSaludSeeder.php
+    - database/seeders/EmpleadoSituacionSeeder.php
+    - database/seeders/AlmacenSeeder.php
+    - database/seeders/AlmacenDetalleSeeder.php
+    - database/seeders/KardexSeeder.php
+models:
+    User: { uuid: 'string:100 unique', dni: 'integer unique', nombre: string, apellido: string, sexo: mediumInteger, fchanacimiento: date, email: 'string unique', direccion: string, telefcelular: 'string:50', teleffijo: 'string:50', usuario: 'string unique', password: string, passwordunico: string, tipousuario: mediumInteger, foto: string, estado: mediumInteger, email_verified_at: 'timestamp nullable', remember_token: rememberToken, relationships: { hasMany: 'UsuProyecto, UsuPermiso' } }
+    Departamento: { nombre: string, estado: mediumInteger }
+    Provincia: { nombre: string, departamento_id: id }
+    Distrito: { nombre: string, provincia_id: id }
+    Proveedor: { uuid: 'string:100 unique', ruc: string, razonsocial: string, direccion: 'string nullable', estadoactual: 'string nullable', emision: 'string nullable', ple: 'string nullable', telefonocelular: 'integer nullable', telefonofijo: 'integer nullable', nombrecontacto: 'string nullable', correo: 'string:100 nullable', cuentabancaria: 'integer nullable', observacion: 'text nullable', user_id: id, estado: mediumInteger }
+    Proyecto: { uuid: 'string:100 unique', nombre: string, departamento_id: id, provincia_id: id, distrito_id: id, proveedor_id: id, fchainicial: 'date nullable', fchafinal: 'date nullable', observacion: 'text nullable', alm_sigla: string, alm_serie: string, com_sigla: string, com_serie: string, caj_sigla: string, caj_serie: string, estado: mediumInteger }
+    Modulo: { uuid: 'string:100 unique', codigom: 'integer unique', nombre: 'string:20', slug: 'string unique', icon: 'string:20 nullable', fchaactivacion: 'date nullable', estado: mediumInteger, relationships: { hasMany: 'submodulo, UsuModulo' } }
+    Submodulo: { uuid: 'string:100 unique', codigom: 'integer unique', modulo_id: id, nombre: string, slug: 'string unique', fchaactivacion: 'date nullable', estado: mediumInteger, relationships: { hasMany: 'UsuModulo, UsuSubmodulo' } }
+    UsuProyecto: { uuid: 'string:100 unique', fchaactivacion: 'date nullable', estado: boolean, user_id: id, proyecto_id: id, relationships: { hasMany: UsuModulo } }
+    UsuModulo: { uuid: 'string:100 unique', fchaactivacion: 'date nullable', estado: boolean, usu_proyecto_id: id, modulo_id: id, relationships: { hasMany: UsuSubmodulo } }
+    UsuSubmodulo: { uuid: 'string:100 unique', tipopermiso: mediumInteger, fchaactivacion: 'date nullable', estado: boolean, usu_modulo_id: id, submodulo_id: id }
+    TipoPermiso: { uuid: 'string:100 unique', nombre: string, simbolo: string }
+    UsuPermiso: { uuid: 'string:100 unique', usuer_id: id, proyecto_id: id, modulo_id: id, submodulo_id: id, tipo_permiso_id: id }
+    Pais: { nombre: string, idioma: string, moneda: string, simbolo: string, estado: boolean }
+    GradoInstruccion: { nombre: 'string:100', estado: boolean }
+    Profesion: { nombre: 'string:100', estado: boolean }
+    Banco: { uuid: 'string:100 unique', nombre: 'string:100', estado: boolean }
+    SistemaPension: { nombre: 'string:100', sector: 'string:100', estado: boolean }
+    Uniforme: { nombre: 'string:100', estado: boolean }
+    Calzado: { nombre: 'string:100', estado: boolean }
+    TipoContrato: { nombre: 'string:100', estado: boolean }
+    Area: { uuid: 'string:100 unique', nombre: 'string:100', estado: boolean }
+    Cargo: { uuid: 'string:100 unique', nombre: 'string:100', estado: boolean }
+    Civil: { uuid: 'string:100 unique', nombre: 'string:100', estado: boolean }
+    Parentesco: { nombre: string }
+    TipoMovimiento: { uuid: 'string:100 unique', codigo: string, descripcion: string, tipo: mediumInteger, estado: boolean }
+    TipoAutorizacion: { uuid: 'string:100 unique', nombre: string, estado: boolean }
+    TipoComprobante: { uuid: 'string:100 unique', codigo: string, nombre: string, estado: boolean }
+    TipoMaquina: { uuid: 'string:100 unique', nombre: string, estado: boolean }
+    TipoCambio: { uuid: 'string:100 unique', month_year: string, purchase: 'decimal:8,2', sale: 'decimal:8,2', date: 'string:10', day: 'string:10', user_id: id }
+    Sanguineo: { nombre: string, estado: boolean }
+    UnidadMedida: { uuid: 'string:100 unique', nombre: string, simbolo: string, estado: boolean }
+    Empleado: { uuid: 'string:100 unique', dni: 'string:100', codmanual: string, nombre: string, apellido: string, sexo: string, pais_id: id, departamento_id: id, provincia_id: id, distrito_id: id, fnacimiento: string, estadocivil: string, correo: string, grado_instruccion_id: id, profesion_id: id, banco_id: id, cuentabancaria: string, sistema_pension_id: id, cuss: string, esalud: string, nombre_jr: string, nro_mz: string, int_lte: string, urb_asoc: string, referencia: string, tlefcasa: string, tlefmovil: string, tleffamiliar: string, tlefotro: string, uniforme_id: id, calzado_id: id, numerolicencia: string, user_id: id, foto: string }
+    EmpleadoDetalle: { uuid: 'string:100 unique', empleado_id: id, proyecto_id: id, tipo_contrato_id: id, fchaingreso: string, fchatermino: string, fchacese: string, area_id: id, cargo_id: id, motivocese: string, estado: boolean }
+    EmpleadoConyugue: { uuid: 'string:100 unique', nombre: string, dni: string, pais_id: id, departamento_id: id, provincia_id: id, distrito_id: id, fchanacimiento: string, civil_id: id, partida: string, grado_instruccion_id: id, profesion_id: id, actividad: string, empleado_id: id }
+    EmpleadoEconomia: { uuid: 'string:100 unique', ingreso_adi: boolean, actividad_adi: string, monto_adi: 'decimal:8,2', ingreso_cony: boolean, actividad_cony: string, monto_cony: 'decimal:8,2', ingreso_ali: 'decimal:8,2', ingreso_edu: 'decimal:8,2', ingreso_sal: 'decimal:8,2', ingreso_viv: 'decimal:8,2', ingreso_ser: 'decimal:8,2', ingreso_hig: 'decimal:8,2', ingreso_lim: 'decimal:8,2', ingreso_tra: 'decimal:8,2', ingreso_total: 'decimal:8,2', empleado_id: id }
+    EmpleadoExperiencia: { uuid: 'string:100 unique', empresa: string, funcion: string, fchainicio: string, fchafinal: string, empleado_id: id }
+    EmpleadoFamilia: { uuid: 'string:100 unique', nombre: string, parentesco_id: id, dni: string, fchanacimiento: 'string:10', empleado_id: id }
+    EmpleadoFormacion: { uuid: 'string:100 unique', especialdiad: string, centro_estudio: string, fchainicio: string, fchafinal: string, empleado_id: id }
+    EmpleadoPadres: { uuid: 'string:100 unique', nombre: string, sexo: string, dni: string, pais: string, departamento_id: id, provincia_id: id, distrito_id: id, fecha_nacimiento: 'date nullable', civil_id: id, correo: string, grado_instruccion_id: id, profesion_id: id, actividad: string, empleado_id: id }
+    EmpleadoSalud: { uuid: 'string:100 unique', sanguineo_id: id, enfermedad_t: string, enfermedad_f: string, empleado_id: id }
+    EmpleadoSituacion: { uuid: 'string:100 unique', casa: string, material: string, tipo: string, agua: string, desague: string, luz: string, telefono: string, internet: string, cable: string, comunicacion: string, social: string, empleado_id: id }
+    Articulo: { uuid: 'string:100 unique', codigo: string, nombre: string, img: string, codigoactivo: string, unidad_medida_id: id, nroparte: string, stockmin: string, precio: string, fechav: 'date nullable', impigv: string, impisc: string, ctaprovicional: string, ctaisc: string, ctaigv: string, ctavarios: string, estado: boolean, user_id: id }
+    Almacen: { uuid: 'string:100 unique', codigo: string, sigla_ag: string, serie_ag: string, periodo_ag: string, numero_oc: string, fecha_oc: 'date nullable', correlativo: string, fcha_correlativo: string, tipo_oc: string, area_solicitante_id: 'id:Area', empleado_solicitante_id: 'id:Empleado', proveedor_id: id, guia: string, fecha_guia: 'date nullable', factura: string, fecha_factura: 'date nullable', tipo_movimiento_id: id, area_responsable_id: 'id:Area', empleado_despacho_id: 'id:Empleado', tipo_autorizacion_id: id, numero_fisico: string, tipo_comprobante_id: id, tipo_maquina_id: id, igv: string, tipo_cambio: id, tpopago: string, tpomoneda: string, observacio: string, fecha: 'date nullable', estado: mediumInteger, user_id: string, proyecto_id: id, relationships: { hasMany: 'AlmacenDetalle, Kardex' } }
+    AlmacenDetalle: { uuid: 'string:100 unique', almacen_id: id, sigla_ad: string, fecha: 'date nullable', articulo_id: id, item: string, cant_ingreso: string, cant_salida: string, precio_unitario: string, sub_total: string, igv: string, total_soles: string, total_dolar: string, proyecto_id: id }
+    Kardex: { uuid: 'string:100 unique', fecha: 'date nullable', almacen_id: id, tipo_movimiento: id, tipo_cambio: id, articulo_id: string, numero_parte: string, numero_documento: string, fecha_documento: 'date nullable', tipo: mediumInteger, ingreso: 'decimal:8,2', salida: 'decimal:8,2', saldo: 'decimal:8,2', costo_unitario: 'decimal:8,2', costo_promedio: 'decimal:8,2', costo_ingreso: 'decimal:8,2', costo_salida: 'decimal:8,2', costo_saldo: 'decimal:8,2', numero_orden: 'string:10', saldo_anterior: 'decimal:8,2', costo_anterior: 'decimal:8,2', promedio_anterior: 'decimal:8,2', precio_unitario: 'decimal:8,2', cod_control: string, ciclos: string, comentario: string, proyecto_id: id }
